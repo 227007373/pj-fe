@@ -1,0 +1,30 @@
+.scroll-animation-fadeUp {
+    animation-name: fadeUp;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+.scroll-animation-fadeDown {
+    animation-name: fadeDown;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes fadeUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

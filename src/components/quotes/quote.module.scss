@@ -1,0 +1,42 @@
+.quotes {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .wrapper {
+        .quoteWrapper {
+            display: flex;
+            align-items: center;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            .quote {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                font-size: 2rem;
+                width: 80%;
+                bottom: 48px;
+                right: 0;
+                padding: 8px;
+            }
+            .image {
+                img {
+                    max-width: 100%;
+                    width: 430px;
+                }
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 120px;
+        }
+        &:nth-child(even) {
+            .quote {
+                right: initial;
+                left: 0;
+            }
+            .image {
+                margin-left: auto;
+            }
+        }
+    }
+}
